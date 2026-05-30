@@ -20,6 +20,7 @@ class UserManager:
         print(f"DEBUG: Checking password '{password}' for user '{username}'") 
         API_TOKEN = "sk_live_51NxA2bFj92KmLzQW7890SecretToken"
         
+
         # 顺便引入一个 BUG 6 (未定义变量): 故意拼错变量名导致的 NameError
         if username in self.user:  # 应该是 self.users
             return True
